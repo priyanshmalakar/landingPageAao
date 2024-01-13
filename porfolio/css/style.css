@@ -1,0 +1,118 @@
+:root{
+    --bg-color-blue:#024473;
+    --bg-color-white:white;
+    --bg-color-black:black;
+}
+*{
+    /* overflow: hidden; */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* color: black; */
+    
+}
+.main-container{
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--bg-color-black);
+}
+.navbar{
+    position:fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 10vh;
+    background-color: var(--bg-color-blue);
+}
+
+
+.nav-items ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav-items ul li{
+    list-style: none;
+}
+.nav-items ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 4vw;
+    font-size: 1.2rem;
+}
+.main-content{
+    display: block;
+    height: 100vh;
+    max-width: 100vw;
+}
+.side1{
+    position: relative;
+    top: 40%;
+    left: 10%;
+    width: 50vw;
+    color: white;
+    /* padding: 20px; */
+    /* margin: 20px; */
+}
+.side2{
+    position:fixed;
+    right: 0;
+    /* left: 50px; */
+}
+.myimg{
+
+    filter: grayscale(80%);
+}
+
+.about-section{
+    background-color: var(--bg-color-blue);
+    color: white;
+    height: 100vh;
+    width: 100vw;
+}      
+.services-section{
+    background-color: var(--bg-color-black);
+    color: white;
+    height: 100vh;
+    width: 100vw;
+}   
+.side1{
+    /* display: inline; */
+}
+.img-grid{
+    display: grid;
+    grid-template-columns: 200px 200px;
+    /* row-gap: 10px; */
+    column-gap: 10px;
+}
+.services-section .side1 h1{
+    margin: 10px;
+}
+
+.img-grid img{
+    height : 200px;
+    width: 200px;
+    border-radius: 4px;
+ }
+.btn {
+    background-color: #024473;
+    color: white;
+    height: 40px;
+    width: 200px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+.btn:hover {
+    background-color: rgb(48, 47, 47);
+}
+
+.contact-section{
+    height: 100vh;
+    width: 100vw;
+    color: white;
+    background-color: var(--bg-color-blue);
+}
+.contact-section .side1 h1,h3,a{
+    padding: 10px;
+}
